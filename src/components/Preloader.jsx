@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { Plane, ShieldCheck, Globe } from 'lucide-react';
+import logo from '../assets/ChatGPT_Image_Jun_30__2026__02_10_20_PM-removebg-preview.png';
 
 const Preloader = ({ onComplete }) => {
     const containerRef = useRef(null);
@@ -89,17 +90,8 @@ const Preloader = ({ onComplete }) => {
                 </div>
 
                 {/* Proper Brand Identity */}
-                <div ref={brandRef} className="text-center mb-16">
-                    <h1 className="text-6xl md:text-8xl font-heading font-black text-white tracking-tighter leading-none mb-3">
-                        Felix
-                    </h1>
-                    <div className="flex items-center justify-center gap-4">
-                        <div className="h-[2px] w-12 md:w-20 bg-gradient-to-r from-transparent via-accent/50 to-transparent"></div>
-                        <span className="text-sm md:text-xl font-light text-accent tracking-[0.6em] uppercase whitespace-nowrap">
-                            by Sagar
-                        </span>
-                        <div className="h-[2px] w-12 md:w-20 bg-gradient-to-r from-transparent via-accent/50 to-transparent"></div>
-                    </div>
+                <div ref={brandRef} className="flex justify-center mb-16">
+                    <img src={logo} alt="Felix Logo" className="h-24 md:h-32 w-auto object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]" />
                 </div>
 
                 {/* Mission Status System */}
