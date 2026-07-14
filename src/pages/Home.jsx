@@ -5,6 +5,7 @@ import Countries from '../components/Countries';
 import WhyChooseUs from '../components/WhyChooseUs';
 import Cta from '../components/Cta';
 import AwardProcess from '../components/AwardProcess';
+import SuccessStories from '../components/SuccessStories';
 import { useLocation } from 'react-router-dom';
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
             <Features />
             <Countries />
             <WhyChooseUs />
+            <SuccessStories />
             <AwardProcess />
             <Cta />
         </main>
