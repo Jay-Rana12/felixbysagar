@@ -57,7 +57,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <section ref={heroRef} className="relative w-full h-screen min-h-[750px] overflow-hidden flex items-center bg-[#020817]">
+        <section ref={heroRef} className="relative w-full h-screen min-h-[750px] overflow-hidden flex items-center pt-24 lg:pt-32 bg-[#020817]">
             {/* Background Layers */}
             <div className="absolute inset-0 z-0">
                 {/* Deep Space Background */}
@@ -137,11 +137,11 @@ const Hero = () => {
             </div>
 
             {/* Precision UI Scroll Indicator */}
-            <div className="absolute bottom-10 left-12 hidden md:flex flex-col items-center gap-5 group cursor-pointer z-10" onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}>
-                <div className="w-[1px] h-24 bg-gradient-to-b from-accent to-transparent relative">
-                    <div className="absolute top-0 left-0 w-full h-8 bg-white/60 animate-scroll-line"></div>
+            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-3 group cursor-pointer z-10" onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}>
+                <span className="text-[9px] uppercase font-bold tracking-[0.4em] text-gray-500 group-hover:text-accent transition-colors">Scroll</span>
+                <div className="w-[1px] h-16 bg-gradient-to-b from-accent to-transparent relative overflow-hidden">
+                    <div className="absolute top-0 left-0 w-full h-6 bg-white/60 animate-scroll-line"></div>
                 </div>
-                <span className="[writing-mode:vertical-lr] text-[10px] uppercase font-bold tracking-[0.5em] text-gray-500 group-hover:text-accent transition-colors">Explore</span>
             </div>
 
             <style dangerouslySetInnerHTML={{
